@@ -33,27 +33,35 @@ public class MainActivity extends AppCompatActivity {
         result = findViewById(R.id.result);
 
 
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Toast.makeText(MainActivity.this , "Hello", Toast.LENGTH_SHORT).show();
 
-                String str = inputValue.getText().toString();
-                int val = Integer.parseInt(str);
-                double output = val/1609.344;
-
-                result.setText("The ans is: " + output );
-
-            }
-        });
-
-
-
+//        submit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////              Toast.makeText(MainActivity.this , "Hello", Toast.LENGTH_SHORT).show();
+//
+//                String str = inputValue.getText().toString();
+//                int val = Integer.parseInt(str);
+//                double output = val/1609.344;
+//
+//                result.setText("The ans is: " + output );
+//
+//            }
+//        });
 
     }
 
+    // using onclick attribute in xml file by
+    // write android:onClick="Calculate" in xml file and define
+    // public void Calculate (View view){ //.. code for action here }
+    public void Calculate(View view){
 
+        String str = inputValue.getText().toString();
+        int val = Integer.parseInt(str);
+        double output = val/1609.344;
 
+        result.setText("The ans is: " + output );
+
+    }
 
 
 }
