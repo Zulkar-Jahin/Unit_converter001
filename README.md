@@ -1,5 +1,5 @@
 This is my very first app that can convert input value meter to mile. 
-The perpose is to get femilier with the push and commit process. 
+The perpose is to get familier with the push and commit process. 
 
 
 
